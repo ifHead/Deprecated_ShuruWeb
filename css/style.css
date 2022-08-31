@@ -1,0 +1,41 @@
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+canvas {
+  display: block;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: 300;
+  height: 100vh;
+  font-size: 2em;
+}
+
+section {
+  padding: 8em;
+  height: 100vh;
+}
+
+.custom {
+  width: 500px;
+  height: 500px;
+  overflow: auto;
+}
