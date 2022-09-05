@@ -1,0 +1,76 @@
+html {
+    scrollbar-width: none;
+}
+
+body {
+    margin: 0;
+
+    /*드래그 방지*/
+    -webkit-user-select: none !important;
+    -moz-user-select: -moz-none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #ff0000;
+}
+
+.introVid {
+    background-color: white;
+    width:20%;
+}
+
+.introVid:after {
+    padding-bottom: 100%;
+    content: "";
+    display: block;
+}
+
+.inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.box {
+    position: relative;
+    top: calc(var(--vh, 1vh) * 50);
+    transform: translateY(-50%);
+    width: 50%;
+    max-height: 50vh;
+    max-width: 50vh;
+    background-color: skyblue;
+}
+
+.box::after {
+    display: block;
+    content: "";
+    padding-bottom: 100%;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.not_scroll {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
