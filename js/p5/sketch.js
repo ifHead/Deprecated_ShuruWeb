@@ -10,6 +10,8 @@ const sa = (a) => {
 	let mouseOn = true;
 
 	a.setup = () => {
+		
+
 		cnv = a.createCanvas(a.windowWidth, a.windowHeight);
 		a.noCursor();
 		clr = a.color(255, 0, 0);
@@ -24,6 +26,7 @@ const sa = (a) => {
 	};
 
 	a.draw = () => {
+		
 		a.clear();
 		a.fill(255);
 		a.rect(x, y, 50, 50);

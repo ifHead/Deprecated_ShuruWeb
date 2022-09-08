@@ -6,7 +6,7 @@ let screenWidth;
 
 const shuruJumpGame = (c) => {
 	c.setup = () => {
-		c.createCanvas(500, 500);
+		c.createCanvas(c.windowWidth, 500);
 		c.background(0);
 		// shuruJumpGame.background(255);
 		// gameManager.startGame();

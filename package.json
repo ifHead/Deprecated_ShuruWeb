@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/in7jhub/ShuruWeb#readme",
   "dependencies": {
+    "luxy.js": "^0.1.0",
     "smooth-scrollbar": "^8.7.5"
   }
 }

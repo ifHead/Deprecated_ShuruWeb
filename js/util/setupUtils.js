@@ -40,7 +40,3 @@ text.innerText = '\n' + 'Detect Mobile Device' + '\n' + '\n' +
 	'2.Touch Display : ' + isTouchDevice().toString() + '\n' +
 	'3.Desktop OS : ' + isDesktopOS().toString() + '\n' +
 	'\nSo, I bet you are using ' + (isMobile ? 'mobile device or sth else' : 'PC or sth else');
-
-
-
-text.style.fontSize = '2.5em';
