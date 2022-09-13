@@ -1,6 +1,7 @@
 let obstacle;
 let difficulty;
 let screenWidth;
+let value = 0;
 
 // let gameManager = new GameManager();
 
@@ -13,8 +14,15 @@ const shuruJumpGame = (c) => {
 	};
 
 	c.draw = () => {
-
+		c.fill(value,100,100);
+		c.rect(0,0,100,100);
 	};
+
+	c.keyPressed = function() { // 이걸로 점프 만들면 됨
+		if (c.keyCode === 16) {
+			value = 255;
+		}
+	}
 }
 
 // eslint-disable-next-line no-unused-vars, no-undef
@@ -29,6 +37,8 @@ class GameManager {
 		this.time = 0;
 	}
 }
+
+
 
 // 	addTime() {
 // 		this.time += 1;

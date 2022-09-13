@@ -22,6 +22,7 @@
 
   <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js"></script>
@@ -60,6 +61,7 @@
   
 
   <link rel="stylesheet" href="css/Common.css">
+  <link rel="stylesheet" href="css/gsap.css">
   <link rel="stylesheet" href="css/mediaQueryMobile.css">
   <link rel="stylesheet" href="css/mediaQueryTablet.css">
   <link rel="stylesheet" href="css/mediaQueryPC.css">
@@ -68,30 +70,35 @@
 
 
 <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false' style="overflow-x:hidden">
-  <div id="luxy">
-    <div class="luxy-el" data-speed-y="5" data-offset="-50"></div>
-    <div class="box">
-      <div class="content">
-        <p>내부 컨텐츠입니다 과연 어떨까요
-          Lorem ipsum dolor sit amet consectetur<br>
-          adipisicing elit. Delectus molestiae i<br>
-          llo quam veritatis mperspiciatis voluptate<br>
-          iusto tenetur officia distinctio corporis, deserunt m<br>
-          a ex tempora dicta itaque explicabo culpa ipsam? Similique?</p>
-      </div>
+<div id="luxy">
+<div class="luxy-el" data-speed-y="5" data-offset="-50"></div>
+  <div class="box d">d</div>
+  <div class="box e">e</div>
+  <div class="box f">f</div>
+
+  <div class="box">
+    <div class="content">
+      <p>내부 컨텐츠입니다 과연 어떨까요
+        Lorem ipsum dolor sit amet consectetur<br>
+        adipisicing elit. Delectus molestiae i<br>
+        llo quam veritatis mperspiciatis voluptate<br>
+        iusto tenetur officia distinctio corporis, deserunt m<br>
+        a ex tempora dicta itaque explicabo culpa ipsam? Similique?</p>
     </div>
-    <p id="text"></p>
-    <div style="position:absolute; left:10000px; width:100px; height: 100px; background-color: black;"></div>
-    <div id="a" style="position: fixed; width:100%; height:100%;"></div>
-    <div id="b" style="position: absolute; top:800px; width:100%; height:20%;"></div>
-    <div id="c" style="position: fixed; width:100%; height:100%;"></div>
   </div>
+  
+  <p id="text"></p>
+  <div style="position:absolute; left:10000px; width:100px; height: 100px; background-color: black;"></div>
+  <div id="a" style="position: fixed; width:100%; height:100%;"></div>
+  <div id="b" style="position: absolute; top:800px; width:100%; height:20%;"></div>
+  <div id="c" style="position: fixed; width:100%; height:100%;"></div>
+</div>
 
   <script src="/node_modules/luxy.js/src/js/luxy.js"></script>
+  <script src="/js/gsap/gsap.js"></script>
   <script charset="utf-8">
     luxy.init();
   </script>
-  <script src="js/util/SmoothScroll.js"></script>
   <script src="js/p5/p5.min.js"></script>
   <script src="js/p5/sketch.js"></script>
   <script src="js/p5/ShuruJump/shuruJump.js"></script>
