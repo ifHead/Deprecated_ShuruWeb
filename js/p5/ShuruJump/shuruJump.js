@@ -8,7 +8,7 @@ let value = 0;
 const shuruJumpGame = (c) => {
 	c.setup = () => {
 		c.createCanvas(c.windowWidth, 500);
-		c.background(0);
+		// c.background(0);
 		// shuruJumpGame.background(255);
 		// gameManager.startGame();
 	};
@@ -37,8 +37,6 @@ class GameManager {
 		this.time = 0;
 	}
 }
-
-
 
 // 	addTime() {
 // 		this.time += 1;

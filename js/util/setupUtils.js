@@ -33,10 +33,14 @@ let text = document.getElementById("text");
 
 //셋 중 하나라도 걸리면 모바일로 판단합니다
 //모바일 기기에서 p5.js 등의 라이브러리를 사용하지 않도록 민감하게 
-let isMobile = mobileCheckByRegex() || isTouchDevice() || !(isDesktopOS());
+let isMobile = mobileCheckByRegex() || !isDesktopOS() || (!isDesktopOS() && isTouchDevice());
 
-text.innerText = '\n' + 'Detect Mobile Device' + '\n' + '\n' +
-	'1.Mobile Type Regex : ' + mobileCheckByRegex().toString() + '\n' +
-	'2.Touch Display : ' + isTouchDevice().toString() + '\n' +
-	'3.Desktop OS : ' + isDesktopOS().toString() + '\n' +
-	'\nSo, I bet you are using ' + (isMobile ? 'mobile device or sth else' : 'PC or sth else');
+// text.innerText = '\n' + 'Detect Mobile Device' + '\n' + '\n' +
+// 	'1.Mobile Type Regex : ' + mobileCheckByRegex().toString() + '\n' +
+// 	'2.Touch Display : ' + isTouchDevice().toString() + '\n' +
+// 	'3.Desktop OS : ' + isDesktopOS().toString() + '\n' +
+// 	'\nSo, I bet you are using ' + (isMobile ? 'mobile device or sth else' : 'PC or sth else');
+
+if (isMobile) {
+	location.replace("/m/")
+}

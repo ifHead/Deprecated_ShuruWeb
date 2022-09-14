@@ -11,7 +11,6 @@ const sa = (a) => {
 
 	a.setup = () => {
 		
-
 		cnv = a.createCanvas(a.windowWidth, a.windowHeight);
 		a.noCursor();
 		clr = a.color(255, 0, 0);
@@ -85,7 +84,7 @@ const sb = (b) => {
 	let cnv;
 
 	b.setup = () => {
-		cnv = b.createCanvas(b.windowWidth, 200);
+		cnv = b.createCanvas(100, 200);
 		b.pixelDensity(1);
 		clr = b.color(255, 0, 0);
 		cnv.mouseClicked(bMouseClicked);
