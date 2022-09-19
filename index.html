@@ -3,7 +3,7 @@
 
 <head>
   <!--기본 설정-->
-  <script src="js/util/setupUtils.js"></script>
+  <!-- <script src="js/util/setupUtils.js"></script> -->
   <meta charset="utf-8">
   <title>Shuru Lab</title>
 
@@ -63,7 +63,6 @@
   <meta name="viewport"
     content="minimum-scale=1.0, width=device-width; initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no">
 
-
   <link rel="stylesheet" href="css/Common.css">
   <link rel="stylesheet" href="css/gsap.css">
   <link rel="stylesheet" href="css/mediaQueryMobile.css">
@@ -71,19 +70,18 @@
   <link rel="stylesheet" href="css/mediaQueryPC.css">
 
 
-  <script src="js/util/setupUtils.js"></script>
+  <!-- <script src="js/util/setupUtils.js"></script> -->
 </head>
 
 
 <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false' style="overflow-x:hidden">
-  <div id="luxy">
-    <div class="luxy-el" data-speed-y="5" data-offset="-50"></div>
-
-    <div class="box d">d</div>
+  <!-- <div id="luxy">
+    <div class="luxy-el" data-speed-y="5" data-offset="-50"></div> -->
+    <!-- <div class="box d">d</div>
     <div class="box e">e</div>
-    <div class="box f">f</div>
+    <div class="box f">f</div> -->
 
-    <h1 style="position: absolute; top: 400px; left:50%; transform: translateX(-50%);">Intro</h1>
+    
     <h1 style="position: absolute; top: 1200px; left:50%; transform: translateX(-50%);">A_1</h1>
     <h1 style="position: absolute; top: 2000px; left:50%; transform: translateX(-50%);">A_2</h1>
     <h1 style="position: absolute; top: 2800px; left:50%; transform: translateX(-50%);">B_1</h1>
@@ -92,8 +90,7 @@
     <h1 style="position: absolute; top: 5200px; left:50%; transform: translateX(-50%);">C_2</h1>
     <h1 style="position: absolute; top: 6000px; left:50%; transform: translateX(-50%);">Ending</h1>
 
-
-    <div class="box">
+    <!-- <div class="box">
       <div class="content">
         <p>내부 컨텐츠입니다 과연 어떨까요
           Lorem ipsum dolor sit amet consectetur<br>
@@ -102,25 +99,39 @@
           iusto tenetur officia distinctio corporis, deserunt m<br>
           a ex tempora dicta itaque explicabo culpa ipsam? Similique?</p>
       </div>
-    </div>
+    </div> -->
+    
 
-    <p id="text"></p>
+    <!-- <p id="text"></p>
     <div style="position:absolute; left:10000px; width:100px; height: 100px; background-color: black;"></div>
     <div id="a" style="position: fixed; width:100%; height:100%;"></div>
     <div id="b" style="position: absolute; top:800px; width:100%; height:20%;"></div>
-    <div id="c" style="position: fixed; width:100%; height:100%;"></div>
+    <div id="c" style="position: fixed; width:100%; height:100%;"></div> -->
+
+    
+
+    <!-- <div id="divtest">Start the test.</div> -->
   </div>
 
   <script src="/node_modules/luxy.js/src/js/luxy.js"></script>
   <script src="/js/gsap/gsap.js"></script>
   <script charset="utf-8">
     luxy.init();
-    </script>
+  </script>
   <script src="js/p5/p5.min.js"></script>
   <script src="js/p5/sketch.js"></script>
   <script src="js/p5/ShuruJump/shuruJump.js"></script>
   <script src="js/util/gotoTopAndFix.js"></script>
+  
+  <div class="container2">
+    <h1>&nbsp;<span class="auto-text" style="z-index:2;"></span></h1>
+  </div>
 
+  <script src="js/gsap/intro.js"></script>
+  <script src="js/p5/particle.js"></script>
+  
+  <!-- Include JS Script and import 'typed.js' as module-->
+  <script type="module" src="js/Type-Effect-Library-master/index.js"></script>
 </body>
 
 </html>

@@ -4,7 +4,6 @@ window.scrollTo(0, 0)
 //로딩 끝나면 아래
 // $("html, body").removeClass("not_scroll");
 
-
 // var ve = document.getElementById("loadingVid"); // 비디오 엔드 이벤트를 감지하기 위함
 
 // window.onload = function () { // 모든 것이 실제로 로딩완료되면,
