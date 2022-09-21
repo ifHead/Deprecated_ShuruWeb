@@ -14,7 +14,7 @@
   Yes, this is us! You can buy cute things here. 
   And you can learn more about Shuru Lab. 
   Anyway, have a good time!">
-
+<script src="https://cdn.jsdelivr.net/npm/textify.js@1.2.2/dist/Textify.min.js"></script>
   <!-- Font -->
   <!-- 나눔스퀘어 -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
@@ -75,12 +75,33 @@
 
 
 <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false' style="overflow-x:hidden">
-  <!-- <div id="luxy">
-    <div class="luxy-el" data-speed-y="5" data-offset="-50"></div> -->
-    <!-- <div class="box d">d</div>
-    <div class="box e">e</div>
-    <div class="box f">f</div> -->
+  <div id="luxy">
+    <div class="luxy-el" data-speed-y="5" data-offset="-50"></div>
 
+    <button id="btns">리빌버튼</button>
+
+    <p class="p-1">Lorem ipsum dolor sit amet consectetur <br>
+      adipisicing elit. Repellendus eligendi rerum voluptatibus <br>
+      molestias officia, ut molestiae alias totam maiores architecto <br>
+      praesentium distinctio consequatur consequuntur deserunt doloribus, <br>
+      ab quasi. Dolorum, eaque!</p>
+    
+    <div class="box d">d</div>
+    <div class="box e">e</div>
+    <div class="box f">f</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/textify.js@1.2.1/dist/Textify.min.js"></script>
+    <script>
+      const section1 = new Textify({
+        selector: ".p-1",
+        once: false,
+        scale: 0,
+        rotation: 20,
+        easing: "back",
+        fade: true,
+        duration: 1000
+      });
+    </script>
     
     <h1 style="position: absolute; top: 1200px; left:50%; transform: translateX(-50%);">A_1</h1>
     <h1 style="position: absolute; top: 2000px; left:50%; transform: translateX(-50%);">A_2</h1>
@@ -90,7 +111,7 @@
     <h1 style="position: absolute; top: 5200px; left:50%; transform: translateX(-50%);">C_2</h1>
     <h1 style="position: absolute; top: 6000px; left:50%; transform: translateX(-50%);">Ending</h1>
 
-    <!-- <div class="box">
+    <div class="box">
       <div class="content">
         <p>내부 컨텐츠입니다 과연 어떨까요
           Lorem ipsum dolor sit amet consectetur<br>
@@ -99,7 +120,7 @@
           iusto tenetur officia distinctio corporis, deserunt m<br>
           a ex tempora dicta itaque explicabo culpa ipsam? Similique?</p>
       </div>
-    </div> -->
+    </div>
     
 
     <!-- <p id="text"></p>
@@ -111,7 +132,9 @@
     
 
     <!-- <div id="divtest">Start the test.</div> -->
-  </div>
+
+  </div> <!--luxy smoothscroll end-->
+  <!-- ------------------- ------------------- ------------------- ------------------- -->
 
   <script src="/node_modules/luxy.js/src/js/luxy.js"></script>
   <script src="/js/gsap/gsap.js"></script>
@@ -122,13 +145,23 @@
   <script src="js/p5/sketch.js"></script>
   <script src="js/p5/ShuruJump/shuruJump.js"></script>
   <script src="js/util/gotoTopAndFix.js"></script>
+
+  <button onclick="toggleImg()">toggle</button>
+  <img id="img" src="/Icon/Favicon/favicon-144x144.png" />
+  <script>
+    function toggleImg() {
+      document.getElementById("img").src = "/Icon/Favicon/index_mv_bird.png";
+      setTimeout(function () { document.getElementById("img").src = "/Icon/Favicon/favicon-144x144.png"; }, 1000);
+    }
+  </script>
   
   <div class="container2">
-    <h1>&nbsp;<span class="auto-text" style="z-index:2;"></span></h1>
+    <h1>&nbsp;<span class="auto-text" style="z-index: index 1000; color:white;"></span></h1>
   </div>
 
   <script src="js/gsap/intro.js"></script>
   <script src="js/p5/particle.js"></script>
+  <script src="js/textReveal/textReveal.js"></script>
   
   <!-- Include JS Script and import 'typed.js' as module-->
   <script type="module" src="js/Type-Effect-Library-master/index.js"></script>

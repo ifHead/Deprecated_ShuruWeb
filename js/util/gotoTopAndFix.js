@@ -1,5 +1,5 @@
-$("html, body").addClass("not_scroll");
-window.scrollTo(0, 0)
+// $("html, body").addClass("not_scroll");
+// window.scrollTo(0, 0)
 
 //로딩 끝나면 아래
 // $("html, body").removeClass("not_scroll");

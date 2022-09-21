@@ -4,7 +4,7 @@ const tl = gsap.timeline({
             duration: 1
         }
     })
-    .to("#divtest", {
+    .to("#divtest", {           
         opacity: 100
     })
     .to("#divtest", {
